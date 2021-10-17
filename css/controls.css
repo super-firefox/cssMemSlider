@@ -12,7 +12,7 @@
 }
 
 @media (min-width: 1024px){
-    .slider__controls{
+        .slider__controls{
         justify-content: flex-end;
     }
 }
@@ -26,6 +26,12 @@
     cursor: pointer;
 }
 
+.slider__controls > label:hover > .circle {
+    background-color: white;
+    border-color: white;
+    transition: 0.2s linear;
+}
+
 .slider__controls > label:active > .circle {
     background-color: var(--button-color);
     border-color: var(--button-color);
@@ -37,17 +43,10 @@ input[type="radio"]:not(:checked) ~ .wrapper>.slider>.slider__controls>label:hov
     transition: 0.2s linear;
 }
 
-input[type="radio"]:not(:checked) ~ .wrapper>.slider>.slider__controls>label:active > .circle{
-    background-color: white;
-    border-color: white;
-    transition: 0.2s linear;
-}
-
 #radio_1:checked ~ .wrapper>.slider>.slider__controls>label[for="radio_1"] > .circle{
     background: transparent;
     transition: 0.2s linear;
 }
-
 
 #radio_2:checked ~ .wrapper>.slider>.slider__controls>label[for="radio_2"] > .circle{
     background: transparent;
