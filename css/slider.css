@@ -46,12 +46,6 @@
         grid-row-start: 1;
         grid-row-end: 2;
     }
-
-
-
-    .slider__controls{
-        /* grid-row-start: ; */
-    }
 }
 
 @media (min-width: 1920px){

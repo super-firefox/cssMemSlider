@@ -1,6 +1,4 @@
-git commit -m "init: start CodeJam CSSMemSlider `date +'%Y-%m-%d %H:%M:%S'`"
-
-git commit -m "feat: add animation for text`date +'%Y-%m-%d %H:%M:%S'`"
+git commit -m "You text +'%Y-%m-%d %H:%M:%S'`"
 
 1. How it feels sharring the bad with my cat
 
