@@ -5,27 +5,28 @@
     overflow: hidden;
 }
 
-.text_one{
+.slider__text > h3 {
+    /* display: none; */
+    position: relative;
+    right: 100%;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
-    position: relative;
-    left:0;
+}
+
+.text_one{
+    
 }
 
 .text_two{
-    display: none;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    
 }
 
 .text_three{
-    display: none;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
+
+}
+
+.text_four{
+
 }

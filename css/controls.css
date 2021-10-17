@@ -23,10 +23,38 @@
 .slider__controls > label:hover > .circle {
     background-color: white;
     border-color: white;
+    transition: 0.2s linear;
+}
+
+.slider__controls > label:active > .circle {
+    background-color: var(--button-color);
+    border-color: var(--button-color);
+    transition: 0.2s linear;
 }
 
 input[type="radio"]:not(:checked) ~ .wrapper>.slider>.slider__controls>label:hover > .circle{
     background-color: white;
+    transition: 0.2s linear;
+}
+
+#radio_1:checked ~ .wrapper>.slider>.slider__controls>label[for="radio_1"] > .circle{
+    background: transparent;
+    transition: 0.2s linear;
+}
+
+#radio_2:checked ~ .wrapper>.slider>.slider__controls>label[for="radio_2"] > .circle{
+    background: transparent;
+    transition: 0.2s linear;
+}
+
+#radio_3:checked ~ .wrapper>.slider>.slider__controls>label[for="radio_3"] > .circle{
+    background: transparent;
+    transition: 0.2s linear;
+}
+
+#radio_4:checked ~ .wrapper>.slider>.slider__controls>label[for="radio_4"] > .circle{
+    background: transparent;
+    transition: 0.2s linear;
 }
 
 .circle {
@@ -36,68 +64,4 @@ input[type="radio"]:not(:checked) ~ .wrapper>.slider>.slider__controls>label:hov
     border-radius: 20px;
     border: var(--button-color) solid 2px;
     background: var(--button-color);
-}
-
-
-
-/**! ANIMATION **/
-
-    /**Slider #1*/
-
-#radio_1:checked ~ .wrapper>.slider>.slider__viewer>.img_1{
-    z-index: 1;
-    animation-name: animation_img;
-    animation-duration: 0.5s;
-}
-
-#radio_1:checked ~ .wrapper>.slider>.slider__controls>label[for="radio_1"] > .circle{
-    background: transparent;
-}
-
-    /**Slider #2*/
-
-#radio_2:checked ~ .wrapper>.slider>.slider__viewer>.img_2{
-    z-index: 2;
-    animation-name: animation_img;
-    animation-duration: 0.5s;
-}
-
-#radio_2:checked ~ .wrapper>.slider>.slider__viewer>.img_1{
-    z-index: 1;
-}
-
-#radio_2:checked ~ .wrapper>.slider>.slider__controls>label[for="radio_2"] > .circle{
-    background: transparent;
-}
-
-    /**Slider #3*/
-
-#radio_3:checked ~ .wrapper>.slider>.slider__viewer>.img_3{
-    z-index: 2;
-    animation-name: animation_img;
-    animation-duration: 0.5s;
-}
-
-#radio_3:checked ~ .wrapper>.slider>.slider__viewer>.img_2{
-    z-index: 1;
-}
-
-#radio_3:checked ~ .wrapper>.slider>.slider__controls>label[for="radio_3"] > .circle{
-    background: transparent;
-}
-
-    /**Slider #4*/
-
-#radio_4:checked ~ .wrapper>.slider>.slider__viewer>.img_4{
-    z-index: 2;
-    animation-name: animation_img;
-    animation-duration: 0.5s;
-}
-
-#radio_4:checked ~ .wrapper>.slider>.slider__viewer>.img_3{
-    z-index: 1;
-}
-
-#radio_4:checked ~ .wrapper>.slider>.slider__controls>label[for="radio_4"] > .circle{
-    background: transparent;
 }

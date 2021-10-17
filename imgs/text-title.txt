@@ -1,3 +1,5 @@
+git commit -m "init: start CodeJam CSSMemSlider `date +'%Y-%m-%d %H:%M:%S'`"
+
 1. How it feels sharring the bad with my cat
 
 2. This One

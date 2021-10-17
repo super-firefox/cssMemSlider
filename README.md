@@ -1,1 +1,1 @@
-[super-firefox.github.io/cssMemSlider/cssMemSlider](https://super-firefox.github.io/cssMemSlider/cssMemSlider/index.html);
+[https://super-firefox.github.io/cssMemSlider/](https://super-firefox.github.io/cssMemSlider/);
