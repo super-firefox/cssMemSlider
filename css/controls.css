@@ -11,6 +11,12 @@
     column-gap: 5px;
 }
 
+@media (min-width: 1024px){
+    .slider__controls{
+        justify-content: flex-end;
+    }
+}
+
 .slider__controls > label {
     width: 20px;
     height: 20px;

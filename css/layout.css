@@ -1,8 +1,7 @@
 
 
 .header, .slider, .footer {
-    border: solid 2px white;
-    padding: 10px;
+    padding: 1vh;
 }
 
 .header {
@@ -19,7 +18,7 @@
 
 .wrapper{
     display: grid;
-    grid-gap: 5px; /* -- delete*/
+    grid-gap: 5px;
     grid-template-columns: 1fr;
     grid-template-rows: minmax(10vh, auto) 1fr minmax(10vh, auto) ;
     grid-template-areas: 
@@ -30,7 +29,7 @@
 
 @media (min-width: 768px){
     .wrapper{
-        grid-template-columns: minmax(10vw, auto) 0.7fr minmax(10vw, auto);
+        grid-template-columns: minmax(2vw, auto) 0.7fr minmax(2vw, auto);
         grid-template-rows: minmax(10vh, auto) 1fr minmax(10vh, auto) ;
         grid-template-areas: 
         ". h ."
@@ -39,10 +38,24 @@
     }
 }
 
-@media (min-width: 1040px){
-
+@media (min-width: 1024px){
+    .wrapper{
+        grid-template-columns: minmax(15vw, auto) 0.7fr minmax(15vw, auto);
+        grid-template-rows: minmax(15vh, auto) 74vh minmax(10vh, auto) ;
+        grid-template-areas: 
+        ". h ."
+        ". s ."
+        ". f .";
+    }
 }
 
 @media (min-width: 1920px){
-
+    .wrapper{
+        grid-template-columns: minmax(15vw, auto) 0.7fr minmax(15vw, auto);
+        grid-template-rows: minmax(10vh, auto) 1fr minmax(10vh, auto) ;
+        grid-template-areas: 
+        ". h ."
+        ". s ."
+        ". f .";
+    }
 }

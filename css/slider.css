@@ -16,11 +16,44 @@
 
 .slider {
     display: grid;
-    grid-row-gap: 20px;
+    grid-row-gap: 30px;
     grid-template-rows: var(--height-viewer) minmax(0, 0.2fr) minmax(10vh, 1fr);
     grid-template-areas: 
     "sv"
     "sc"
     "st"
     ;
+}
+
+@media (min-width: 768px){
+
+}
+
+@media (min-width: 1024px){
+    .slider{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: var(--height-viewer) minmax(10vh, 1fr);
+        grid-template-areas: 
+        "sv sv sv"
+        "st st sc"
+        ;
+    }
+
+    .slider__viewer{
+        grid-area: sv;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+
+
+    .slider__controls{
+        /* grid-row-start: ; */
+    }
+}
+
+@media (min-width: 1920px){
+
 }

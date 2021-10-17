@@ -6,7 +6,9 @@
 }
 
 .slider__text > h3 {
-    /* display: none; */
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 2px;
     position: relative;
     right: 100%;
     grid-column-start: 1;
@@ -15,18 +17,3 @@
     grid-row-end: 2;
 }
 
-.text_one{
-    
-}
-
-.text_two{
-    
-}
-
-.text_three{
-
-}
-
-.text_four{
-
-}
