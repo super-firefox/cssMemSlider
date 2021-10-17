@@ -1,0 +1,22 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_link {
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    text-decoration: none;
+}
+
+.footer_link:hover {
+    color: var(--button-color);
+    text-decoration: none;
+}
+
+.footer_link > img {
+    width: 20px;
+}
