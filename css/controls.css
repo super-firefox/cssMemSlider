@@ -1,0 +1,73 @@
+*{
+    --link: .wrapper>.slider
+}
+#radio_1, #radio_2, #radio_3, #radio_4 {
+    display: none;
+}
+
+.slider__controls{
+    display: flex;
+    justify-content: center;
+    column-gap: 0.5rem;
+}
+
+@media (min-width: 1024px){
+    .slider__controls{
+        justify-content: flex-end;
+    }
+}
+
+.slider__controls > label {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.slider__controls > label:hover > .circle {
+    background-color: white;
+    border-color: white;
+    transition: 0.2s linear;
+}
+
+.slider__controls > label:active > .circle {
+    background-color: var(--button-color);
+    border-color: var(--button-color);
+    transition: 0.2s linear;
+}
+
+input[type="radio"]:not(:checked) ~ .wrapper>.slider>.slider__controls>label:hover > .circle{
+    background-color: white;
+    transition: 0.2s linear;
+}
+
+#radio_1:checked ~ .wrapper>.slider>.slider__controls>label[for="radio_1"] > .circle{
+    background: transparent;
+    transition: 0.2s linear;
+}
+
+#radio_2:checked ~ .wrapper>.slider>.slider__controls>label[for="radio_2"] > .circle{
+    background: transparent;
+    transition: 0.2s linear;
+}
+
+#radio_3:checked ~ .wrapper>.slider>.slider__controls>label[for="radio_3"] > .circle{
+    background: transparent;
+    transition: 0.2s linear;
+}
+
+#radio_4:checked ~ .wrapper>.slider>.slider__controls>label[for="radio_4"] > .circle{
+    background: transparent;
+    transition: 0.2s linear;
+}
+
+.circle {
+    display: block;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 2rem;
+    border: var(--button-color) solid 0.2rem;
+    background: var(--button-color);
+}

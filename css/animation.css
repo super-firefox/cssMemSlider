@@ -1,0 +1,144 @@
+/**! ANIMATION **/
+@-webkit-keyframes animation_show {
+    from {
+        right: -100%;
+    }
+    to {
+        right: 0;
+    }
+}
+
+@keyframes animation_show {
+    from {
+        right: -100%;
+    }
+    to {
+        right: 0;
+    }
+}
+
+@-webkit-keyframes animation_hide {
+    from {
+        right: 0;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes animation_hide {
+    from {
+        right: 0;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+/**Slider #1*/
+
+#radio_1:checked ~ .wrapper>.slider>.slider__viewer>.img_1{
+    z-index: 1;
+    animation-name: animation_show;
+    animation-duration: 0.5s;
+}
+
+#radio_1:checked ~ .wrapper>.slider>.slider__text>.text_two,
+#radio_1:checked ~ .wrapper>.slider>.slider__text>.text_three,
+#radio_1:checked ~ .wrapper>.slider>.slider__text>.text_four {
+    display: inline-block;
+    animation-name: animation_hide;
+    animation-duration: 0.5s;
+    right: 100%;
+}
+
+#radio_1:checked ~ .wrapper>.slider>.slider__text>.text_one{
+    animation-name: animation_show;
+    animation-duration: 0.5s;
+    right: 0;
+}
+
+/**Slider #2*/
+
+#radio_2:checked ~ .wrapper>.slider>.slider__viewer>.img_2{
+    z-index: 2;
+    animation-name: animation_show;
+    animation-duration: 0.5s;
+}
+
+#radio_2:checked ~ .wrapper>.slider>.slider__text>.text_one,
+#radio_2:checked ~ .wrapper>.slider>.slider__text>.text_four,
+#radio_2:checked ~ .wrapper>.slider>.slider__text>.text_three {
+    display: inline-block;
+    animation-name: animation_hide;
+    animation-duration: 0.5s;
+    right: 100%;
+}
+
+#radio_2:checked ~ .wrapper>.slider>.slider__text>.text_two{
+    right: 0;
+    animation-name: animation_show;
+    animation-duration: 0.5s;
+}
+
+#radio_2:checked ~ .wrapper>.slider>.slider__viewer>.img_1{
+    z-index: 1; 
+}
+
+/**Slider #3*/
+
+#radio_3:checked ~ .wrapper>.slider>.slider__viewer>.img_3{
+    z-index: 2;
+    animation-name: animation_show;
+    animation-duration: 0.5s;
+}
+
+#radio_3:checked ~ .wrapper>.slider>.slider__text>.text_one,
+#radio_3:checked ~ .wrapper>.slider>.slider__text>.text_two,
+#radio_3:checked ~ .wrapper>.slider>.slider__text>.text_four {
+    display: inline-block;
+    animation-name: animation_hide;
+    animation-duration: 0.5s;
+    right: 100%;
+}
+
+#radio_3:checked ~ .wrapper>.slider>.slider__text>.text_three{
+    right: 0;
+    animation-name: animation_show;
+    animation-duration: 0.5s;
+}
+
+#radio_3:checked ~ .wrapper>.slider>.slider__viewer>.img_2{
+    z-index: 1;
+}
+
+#radio_3:checked ~ .wrapper>.slider>.slider__controls>label[for="radio_3"] > .circle{
+    background: transparent;
+}
+
+/**Slider #4*/
+
+#radio_4:checked ~ .wrapper>.slider>.slider__viewer>.img_4{
+    z-index: 2;
+    animation-name: animation_show;
+    animation-duration: 0.5s;
+}
+
+#radio_4:checked ~ .wrapper>.slider>.slider__text>.text_one,
+#radio_4:checked ~ .wrapper>.slider>.slider__text>.text_two,
+#radio_4:checked ~ .wrapper>.slider>.slider__text>.text_three {
+    display: inline-block;
+    animation-name: animation_hide;
+    animation-duration: 0.5s;
+    right: 100%;
+}
+
+#radio_4:checked ~ .wrapper>.slider>.slider__text>.text_four{
+    right: 0;
+    animation-name: animation_show;
+    animation-duration: 0.5s;
+}
+
+#radio_4:checked ~ .wrapper>.slider>.slider__viewer>.img_3{
+    z-index: 1;
+}

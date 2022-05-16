@@ -1,0 +1,24 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 1.2rem;
+}
+
+.footer_link {
+    width: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    text-decoration: none;
+}
+
+.footer_link:hover {
+    color: var(--button-color);
+    text-decoration: none;
+}
+
+.footer_link > img {
+    width: 2rem;
+}

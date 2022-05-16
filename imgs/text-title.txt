@@ -1,0 +1,12 @@
+git commit -m "You message `date +'%Y-%m-%d %H:%M:%S'`"   
+
+1. How it feels sharring the bad with my cat
+
+2. This One
+
+3. A thrilling saga
+
+4. Basically a renaissance painting
+
+My Review
+

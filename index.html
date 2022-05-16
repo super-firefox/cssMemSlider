@@ -1,13 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Mem Slider</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/viewer.css">
+    <link rel="stylesheet" href="css/controls.css">
+    <link rel="stylesheet" href="css/text.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/animation.css">
+   
 </head>
+
 <body>
-    
+    <input type="radio" name="choice" id="radio_1" checked>
+    <input type="radio" name="choice" id="radio_2">
+    <input type="radio" name="choice" id="radio_3">
+    <input type="radio" name="choice" id="radio_4">
+
+    <div class="wrapper">
+        <div class="header">CSS Mem Slider</div>
+        <div class="slider">
+            <div class="slider__viewer">
+                <img class="img_1" src="imgs/10.jpg" alt="1">
+                <img class="img_2" src="imgs/20.jpg" alt="2">
+                <img class="img_3" src="imgs/30.jpg" alt="">
+                <img class="img_4" src="imgs/40.jpg" alt="">
+            </div>
+            <div class="slider__controls">
+                <label for="radio_1">
+                    <span class="circle"></span>
+                </label>
+                <label for="radio_2">
+                    <span class="circle"></span>
+                </label>
+                <label for="radio_3">
+                    <span class="circle"></span>
+                </label>
+                <label for="radio_4">
+                    <span class="circle"></span>
+                </label>
+            </div>
+            <div class="slider__text">
+                <h3 class="text_one">How it feels sharring the bad with my cat</h3>
+                <h3 class="text_two">This One</h3>
+                <h3 class="text_three">A thrilling saga</h3>
+                <h3 class="text_four">Basically a renaissance painting</h3>
+            </div>
+        </div>
+        <div class="footer">
+            <h3>Ihor Tymchuk</h3>
+            <h3>&copy; 2022</h3>
+            <h3>
+                <a class="footer_link" href="https://github.com/super-firefox">
+                    <img src="imgs/github-icon-white-5.jpg" alt="git"> 
+                     github
+                </a>
+            </h3>
+        </div>
+    </div>
 </body>
+
 </html>
