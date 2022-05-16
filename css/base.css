@@ -8,6 +8,8 @@
     --button-color: #71abff;
     /* slider viewer */
     --height-viewer: 50vh;
+    --height-viewer-tablet: 40vh;
+    --height-viewer-mobile: 30vh;
 }
 
 html{

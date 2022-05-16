@@ -6,7 +6,7 @@
 }
 
 .footer_link {
-    width: 80px;
+    width: 8rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -20,5 +20,5 @@
 }
 
 .footer_link > img {
-    width: 20px;
+    width: 2rem;
 }

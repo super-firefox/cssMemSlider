@@ -8,18 +8,18 @@
 .slider__controls{
     display: flex;
     justify-content: center;
-    column-gap: 5px;
+    column-gap: 0.5rem;
 }
 
 @media (min-width: 1024px){
-        .slider__controls{
+    .slider__controls{
         justify-content: flex-end;
     }
 }
 
 .slider__controls > label {
-    width: 20px;
-    height: 20px;
+    width: 2rem;
+    height: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,9 +65,9 @@ input[type="radio"]:not(:checked) ~ .wrapper>.slider>.slider__controls>label:hov
 
 .circle {
     display: block;
-    width: 5px;
-    height: 5px;
-    border-radius: 20px;
-    border: var(--button-color) solid 2px;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 2rem;
+    border: var(--button-color) solid 0.2rem;
     background: var(--button-color);
 }
